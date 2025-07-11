@@ -22,7 +22,7 @@ public class JsonKafkaProducer {
     {
         LOGGER.info(String.format("Message sent : %s",user.toString()));
         Message<User> message= MessageBuilder.withPayload(user).
-                setHeader(KafkaHeaders.TOPIC,"campus-connect").build();
+                setHeader(KafkaHeaders.TOPIC,"campus-connect_json").build();
         kafkaTemplate.send(message);
 
     }

@@ -12,4 +12,10 @@ public class KafkaTopicConfiguration {
     {
         return TopicBuilder.name("campus-connect").build();
     }
+
+    @Bean
+    public NewTopic campusConnectTopicJson()
+    {
+        return TopicBuilder.name("campus-connect_json").build();
+    }
 }

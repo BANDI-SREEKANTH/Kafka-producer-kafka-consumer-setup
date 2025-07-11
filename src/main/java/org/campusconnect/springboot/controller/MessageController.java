@@ -17,7 +17,7 @@ public class MessageController {
     }
 
     //localhost:8080/api/v1/campusconnect/publish?message=hello-world
-    // let's create Rest API end points
+    // lets create Rest API end points
     @GetMapping("/publish")
     public ResponseEntity<String> publishMessage(@RequestParam("message") String message)
     {
